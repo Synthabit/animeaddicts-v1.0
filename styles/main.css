@@ -1,0 +1,377 @@
+/* CSS Variables */
+
+:root {
+    /* colors: bg */
+    --main-window-color: #160e2b9c;
+    --main-window-color-light: #cabfe9;
+    /* --main-bg-color: #1d1d1d; */
+    --main-bg-color: #000000;
+    --main-nav-color: #00000075;
+
+    /* colors: text */
+    --main-txt-color-light: #cabfe9;
+    --main-txt-color-dark: #160e2b;
+
+    /* dimensions-global */
+    --parallax-img-width: 100%;
+    --parallax-img-height: 100vh;
+
+    /* dimensions-nav */
+    --nav-height: 50px;
+
+    /* dimensions-site */
+    --showcase-width: 100%;
+    --showcase-height: 100vh;
+    --content-width: 100%;
+    --content-height: 100vh;
+
+    --content-container-width: 50%;
+
+    /* dimensions-footer */
+    --footer-height: 50px;
+
+    /* font-sizes */
+    --h1-size: 80px;
+    --h2-size: 40px;
+    --h3-size: 30px;
+    --h4-size: 20px;
+
+    --main-font-size: 17px;
+
+    --p-showcase-size: 24px;
+    --p-reg-size: 17px;
+
+    /* transition-times */
+    --hover-transition-time: 0.3s;
+    --scroll-transition-time: 0.5s;
+}
+
+/* Global Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    background-color: var(--main-bg-color);
+    opacity: 0%;
+    transition: opacity 1s;
+    vertical-align: top;
+    overflow-x: hidden;
+}
+
+/* container */
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.section-container {
+    max-width: var(--content-container-width);
+    margin: 0px auto 0px auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* Navbar */
+
+nav {
+    z-index: 3;
+    height: var(--nav-height);
+    width: 100%;
+    background: var(--main-nav-color);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px #00000075;
+    transition: background var(--scroll-transition-time);
+}
+
+.nav-container {
+    display: block;
+}
+
+.brand {
+    float: left;
+    padding-top: 2px;
+}
+
+.brand img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+/* Remove this in production */
+/* v */
+.brand #prototype-notice {
+    float: right;
+    color: red;
+    font-size: var(--main-font-size);
+    padding: 13px 25px 15px 25px;
+}
+/* ^ */
+#nav-list {
+    list-style-type: none;
+    float: right;
+}
+
+#nav-list li {
+    float: left;
+    display: block;
+    height: 50px;
+    transition: border var(--hover-transition-time);
+}
+
+#nav-list li a {
+    display: block;
+    color: var(--main-txt-color-light);
+    text-align: center;
+    padding: 15px 25px 15px 25px;
+    text-decoration: none;
+    font-size: var(--main-font-size);
+    transition: color var(--hover-transition-time), background var(--hover-transition-time);
+}
+
+#nav-list li a:hover {
+    color: var(--main-txt-color-dark);
+    background: var(--main-txt-color-light);
+}
+
+/* parallax-img-1 (for Landing) */
+
+.parallax-img-1 {
+    z-index: 1;
+    min-height: var(--parallax-img-height);
+    position: relative;
+    background-image: url('../assets/img/Showcase-Bench.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.parallax-img-1-caption {
+    text-align: center;
+    color: white;
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    z-index: 2;
+}
+
+.parallax-img-1-caption h1 {
+    font-size: var(--h1-size);
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.parallax-img-1-caption p {
+    font-size: var(--p-showcase-size);
+    padding-bottom: 20px;
+}
+
+/* Sections */
+
+section {
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+/* About */
+
+#about {
+    background-image: url('../assets/img/bkgd/bkgd-1.jpg');
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px 80px 0px; 
+}
+
+.about-text {
+    max-width: 80%;
+    margin: auto; 
+    color: white;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: var(--h2-size);
+    text-align: center;
+    padding-top: 40px;
+}
+
+.about-text p {
+    font-size: var(--p-showcase-size);
+    font-weight: 450;
+    padding: 20px 0px 40px 0px;
+}
+
+.about-text p em {
+    color: var(--main-txt-color-light);
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Anime List */
+#animelist {
+    color: white;
+    /* background: var(--main-window-color); */
+    background-image: url('../assets/img/bkgd/bkgd-3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px 80px 0px;
+}
+
+#animelist h2 {
+    text-align: center;
+    font-size: var(--h2-size);
+    padding-top: 40px;
+}
+
+.animelist-list {
+    padding: 40px 0px 40px 0px;
+}
+
+.animelist-list h3 {
+    text-align: center;
+    font-size: var(--h3-size);
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid white;
+}
+
+.animelist-list-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.animelist-list-instance {
+    width: 60%;
+    margin: 0px auto 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.animelist-list-instance:hover {
+    cursor: pointer;
+}
+
+.instance-on-hover {
+    background: var(--main-window-color-light);
+    color: var(--main-txt-color-dark);
+}
+
+.animelist-list-instance img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    transition: filter var(--hover-transition-time);
+}
+
+.animelist-list-instance article {
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    transition: background var(--hover-transition-time), color var(--hover-transition-time);
+}
+
+.animelist-list-instance h4 {
+    font-size: var(--h4-size);
+    text-align: center;
+}
+
+.animelist-list-instance p {
+    display: none; /* Hide the display (do not render content) */
+    text-align: left;
+}
+
+.animelist-list-instance ul {
+    display: none; /* Hide the display (do not render content) */
+}
+
+/* Anime List Instance Info */
+#animelist-list-instance-overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.800);
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    display: none;
+    opacity: 0%;
+    overflow-y: auto;
+    transition: opacity 10s;
+}
+
+#animelist-list-instance-overlay:hover {
+    cursor: pointer;
+}
+
+.overlay-container {
+    max-width: 40%;
+    margin: 0px auto 0px auto;
+}
+
+.overlay-container p {
+    color: white;
+    font-size: 25px;
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+}
+
+.overlay-header {
+    width: 100%;
+}
+
+.overlay-header img {
+    width: 100%;
+}
+
+.overlay-header h2 {
+    color: white;
+    font-size: var(--h2-size);
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: opacity 0.5s;
+}
+
+/* Events */
+
+/* Contact Us */
+
+/* Footer */
+
+footer {
+    z-index: 3;
+    width: 100%;
+    background: black;
+}
+
+.footer-text {
+    padding: 10px 0px 10px 0px;
+    color: var(--main-txt-color-light);
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer-text img {
+    height: 17px;
+}
