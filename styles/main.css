@@ -288,6 +288,8 @@ section {
 .animelist-list-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    max-height: 80vh;
+    overflow: scroll;
 }
 
 .animelist-list-instance {
