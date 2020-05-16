@@ -1,0 +1,31 @@
+@media screen and (max-width: 900px) {
+    /* container */
+    .container {
+        max-width: 100%;
+    }
+    
+    /* Navbar */
+
+    .brand {
+        /* position: absolute; */
+        float: none;
+        transform: translate(15%, 0);
+    }
+
+    #nav-hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        float: none;
+    }
+
+    .nav-list li {
+        float: none;
+    }
+
+    .active {
+        display: block;
+    }
+}

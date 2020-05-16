@@ -9,7 +9,7 @@ var prevIndex = -1;
 
 document.addEventListener("DOMContentLoaded", function() {
     navbar = document.getElementsByClassName("nav")[0];
-    navlistItems = document.getElementById("nav-list").getElementsByTagName("li");
+    navlistItems = document.getElementsByClassName("nav-list")[0].getElementsByTagName("li");
     about = document.getElementById("about");
     animelist = document.getElementById("animelist");
     siteSections = document.querySelectorAll("section");

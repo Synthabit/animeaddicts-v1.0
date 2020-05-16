@@ -18,6 +18,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/mobile.css">
         <title>Anime Addicts WMU</title>
     </head>
     <body>
@@ -32,13 +33,20 @@
                         <p id="prototype-notice">UNOFFICIAL</p>
                         <!-- ^ -->
                     </div>
-                    <ul id="nav-list">
+                    <div id="nav-hamburger">             
+                        <svg viewBox="0 0 100 100   " width="40" height="35">
+                            <rect y="25"width="100" height="10" rx="0"></rect>
+                            <rect y="50" width="100" height="10" rx="0"></rect>
+                            <rect y="75" width="100" height="10" rx="0"></rect>
+                        </svg>
+                    </div>
+                    <ul class="nav-list">
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#animelist">ANIME LIST</a></li>
                         <!-- <li><a href="#">SCHEDULE</a></li> -->
                         <li><a href="#">EVENTS</a></li>
                         <li><a href="#">CONTACT</a></li>
-                    </ul><!-- nav-list -->
+                    </ul><!-- nav-list --> 
                 </div><!-- nav-container -->
             </div><!-- container -->
         </nav><!-- nav -->
@@ -270,5 +278,8 @@
         <script src="scripts/onPageLoad.js"></script>
         <script src="scripts/animelist-script.js"></script>
         <script src="scripts/onScroll-script.js"></script>
+
+        <!-- Scripts-mobile -->
+        <script src="scripts/nav-mobile.js"></script>
     </body>
 </html>

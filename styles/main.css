@@ -86,7 +86,7 @@ body {
 
 nav {
     z-index: 3;
-    height: var(--nav-height);
+    /* height: var(--nav-height); */
     width: 100%;
     background: var(--main-nav-color);
     position: fixed;
@@ -101,7 +101,8 @@ nav {
 }
 
 .brand {
-    float: left;
+    display: inline-block;
+    /* float: left; */
     padding-top: 2px;
 }
 
@@ -120,19 +121,19 @@ nav {
     padding: 13px 25px 15px 25px;
 }
 /* ^ */
-#nav-list {
+.nav-list {
     list-style-type: none;
     float: right;
 }
 
-#nav-list li {
+.nav-list li {
     float: left;
     display: block;
     height: 50px;
     transition: border var(--hover-transition-time);
 }
 
-#nav-list li a {
+.nav-list li a {
     display: block;
     color: var(--main-txt-color-light);
     text-align: center;
@@ -142,9 +143,28 @@ nav {
     transition: color var(--hover-transition-time), background var(--hover-transition-time);
 }
 
-#nav-list li a:hover {
+.nav-list li a:hover {
     color: var(--main-txt-color-dark);
     background: var(--main-txt-color-light);
+}
+
+#nav-hamburger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background var(--hover-transition-time);
+}
+
+#nav-hamburger:hover {
+    cursor: pointer;
+}
+
+#nav-hamburger rect {
+    fill: var(--main-txt-color-light);
+    transition: fill var(--hover-transition-time);
 }
 
 /* parallax-img-1 (for Landing) */
