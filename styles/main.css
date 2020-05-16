@@ -177,6 +177,9 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     opacity: 0.75;
 }
 
@@ -211,11 +214,13 @@ section {
 
 #about {
     background-image: url('../assets/img/bkgd/bkgd-1.jpg');
-    /* background-attachment: scroll; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     padding: 80px 0px 80px 0px; 
 }
 
@@ -257,6 +262,9 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     padding: 80px 0px 80px 0px;
 }
 
