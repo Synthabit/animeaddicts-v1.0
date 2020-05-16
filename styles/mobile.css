@@ -1,3 +1,17 @@
+@media screen and (max-width: 1366px) {
+    .parallax-img-1 {
+        background-attachment: scroll;
+    }
+
+    #about {
+        background-attachment: scroll;
+    }
+
+    #animelist {
+        background-attachment: scroll;
+    }
+}
+
 @media screen and (max-width: 900px) {
     /* CSS Variables */
 
