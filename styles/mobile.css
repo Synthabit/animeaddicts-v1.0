@@ -61,6 +61,8 @@
 
     .animelist-list-grid {
         display: block;
+        max-height: 620px;
+        overflow: scroll;
     }
 }
 
