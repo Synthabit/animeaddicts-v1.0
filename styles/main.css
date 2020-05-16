@@ -39,7 +39,6 @@
     --main-font-size: 17px;
 
     --p-showcase-size: 24px;
-    --p-reg-size: 17px;
 
     /* transition-times */
     --hover-transition-time: 0.3s;
@@ -224,7 +223,6 @@ section {
     max-width: 80%;
     margin: auto; 
     color: white;
-    text-align: center;
 }
 
 .about-text h2 {
@@ -236,10 +234,15 @@ section {
 .about-text p {
     font-size: var(--p-showcase-size);
     font-weight: 450;
+    text-align: left;
     padding: 20px 0px 40px 0px;
 }
 
-.about-text p em {
+#about-text-emph {
+    text-align: center;
+}
+
+#about-text-emph em {
     color: var(--main-txt-color-light);
     font-style: normal;
     font-weight: 900;
@@ -346,7 +349,7 @@ section {
 
 .overlay-container p {
     color: white;
-    font-size: 25px;
+    font-size: var(--p-showcase-size);
     padding: 40px 0px 40px 0px;
     width: 100%;
 }
@@ -389,9 +392,9 @@ footer {
     padding: 10px 0px 10px 0px;
     color: var(--main-txt-color-light);
     text-align: center;
-    font-size: 17px;
+    font-size: var(--main-font-size);
 }
 
 .footer-text img {
-    height: 17px;
+    height: var(--main-font-size);
 }

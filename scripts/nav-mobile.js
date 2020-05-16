@@ -4,8 +4,8 @@ var navList = document.getElementsByClassName("nav-list")[0];
 
 var clicked = false;
 
-hamburger.addEventListener("mouseover", hamburgerOnHover);
-hamburger.addEventListener("mouseout", hamburgerOnLeave);
+// hamburger.addEventListener("mouseover", hamburgerOnHover);
+// hamburger.addEventListener("mouseout", hamburgerOnLeave);
 hamburger.addEventListener("click", hamburgerOnClick);
 
 function hamburgerOnHover() {
