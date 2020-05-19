@@ -16,6 +16,9 @@
     /* CSS Variables */
 
     :root {
+        /* section-container */
+        --content-container-width: 60%;
+
         /* font-sizes */
         --h1-size: 50px;
         --h2-size: 30px;
@@ -70,6 +73,9 @@
     /* CSS Variables */
 
     :root {
+        /* section-container */
+        --content-container-width: 70%;
+
         /* font-sizes */
         --h1-size: 40px;
         --h2-size: 30px;
@@ -111,6 +117,9 @@
     /* CSS Variables */
 
     :root {
+        /* section-container */
+        --content-container-width: 80%;
+
         /* font-sizes */
         --h1-size: 30px;
         --h2-size: 25px;

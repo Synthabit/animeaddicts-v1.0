@@ -17,7 +17,7 @@
                         <a href="#"><img src="assets/img/AnimeAddicts-Logo.jpg" alt="LOGO"></a>
                         <!-- Remove this in production -->
                         <!-- v -->
-                        <p id="prototype-notice">5-15-2020</p>
+                        <p id="prototype-notice">5-18-2020</p>
                         <!-- ^ -->
                     </div>
                     <div id="nav-hamburger">             
@@ -30,9 +30,7 @@
                     <ul class="nav-list">
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#animelist">ANIME LIST</a></li>
-                        <!-- <li><a href="#">SCHEDULE</a></li> -->
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#events">EVENTS</a></li>
                     </ul><!-- nav-list --> 
                 </div><!-- nav-container -->
             </div><!-- container -->
@@ -49,7 +47,6 @@
    
         <main>
             <!-- About -->
-            <!-- TODO: Extend this -->
             <section id="about">
                 <div class="section-container">
                     <div class="about-text">
@@ -63,12 +60,29 @@
                         <p id="about-text-emph">
                             Come join us for one of our weekly meetings on
                             <br>
-                            <br>
                             <em>Saturdays at 2:00PM, 2208 Dunbar Hall!</em>
                         </p>
-                    </div>
-                </div>
-            </section>
+                        <p>Want to get in touch? <a href="#">Email us</a> or visit our social media!</p>
+                        
+                        <div id="contact">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="assets/img/icons/twitter.svg" alt="Placeholder"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/icons/facebook.svg" alt="Placeholder"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/icons/discord.svg" alt="Placeholder"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/icons/groupme.svg" alt="Placeholder"></a>
+                                </li>
+                            </ul>
+                        </div><!-- contact -->    
+                    </div><!-- about-text -->
+                </div><!-- section-container -->
+            </section><!-- about -->
 
             <!-- Anime List -->            
             <section id="animelist">
@@ -244,13 +258,93 @@
 
             <!-- Events -->
             <section id="events">
+                <div class="section-container">
+                    <div class="events-text">
+                        <h2>Events</h2>
 
-            </section>
+                        <div class="events-instance">
+                            <h4>Sample Event Title 1</h4>
+                            <article>
+                                <p>
+                                    Sample event summary; Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit. Dignissimos nisi 
+                                    labore praesentium itaque molestias, laboriosam 
+                                    expedita ducimus beatae quae laborum placeat? Modi 
+                                    hic placeat, facilis eligendi molestiae nihil ut 
+                                    doloremque!
+                                </p>
+                                <table>
+                                    <tr>
+                                        <th>Address:</th>
+                                        <th>1243 The Bench, Cauldren, Ether 7777</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Date:</th>
+                                        <th>x/x/xxxx</th>
+                                    </tr>
+                                </table>
+                            </article>
+                        </div>
+
+                        <div class="events-instance">
+                            <h4>Sample Event Title 2</h4>
+                            <article>
+                                <p>
+                                    Sample event summary; Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit. Dignissimos nisi 
+                                    labore praesentium itaque molestias, laboriosam 
+                                    expedita ducimus beatae quae laborum placeat? Modi 
+                                    hic placeat, facilis eligendi molestiae nihil ut 
+                                    doloremque!
+                                </p>
+                                <table>
+                                    <tr>
+                                        <th>Address:</th>
+                                        <th>1243 Another bench, Bowl, Ether 7777</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Date:</th>
+                                        <th>x/x/xxxx</th>
+                                    </tr>
+                                </table>
+                            </article>
+                        </div>
+
+                        <div class="events-instance">
+                            <h4>Sample Event Title 3</h4>
+                            <article>
+                                <p>
+                                    Sample event summary; Lorem ipsum dolor sit amet 
+                                    consectetur adipisicing elit. Dignissimos nisi 
+                                    labore praesentium itaque molestias, laboriosam 
+                                    expedita ducimus beatae quae laborum placeat? Modi 
+                                    hic placeat, facilis eligendi molestiae nihil ut 
+                                    doloremque!
+                                </p>
+                                <table>
+                                    <tr>
+                                        <th>Address:</th>
+                                        <th>1243 The Library Bench, Library, Ether 7777</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Date:</th>
+                                        <th>x/x/xxxx</th>
+                                    </tr>
+                                </table>
+                            </article>
+                        </div>
+                    </div><!-- events-text -->
+                </div><!-- section-container -->
+            </section><!-- events -->
 
             <!-- Contact Us -->
-            <section id="contact">
-
-            </section>
+            <!-- <section id="contact">
+                <div class="section-container">
+                   <div class="contact-text">
+                       <h2>Contact Us</h2>
+                   </div>
+                </div>
+            </section> -->
         </main>
 
         <!-- Footer -->
@@ -268,6 +362,7 @@
         <script src="scripts/onPageLoad.js"></script>
         <script src="scripts/animelist-script.js"></script>
         <script src="scripts/onScroll-script.js"></script>
+        <script src="scripts/events-script.js"></script>
 
         <!-- Scripts-mobile -->
         <script src="scripts/nav-mobile.js"></script>
