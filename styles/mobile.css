@@ -27,7 +27,7 @@
         --h1-size: 50px;
         --h2-size: 30px;
         --h3-size: 25px;
-        --h4-size: 17px;
+        --h4-size: 20px;
 
         --main-font-size: 14px;
 
@@ -74,6 +74,7 @@
         display: block;
         max-height: 620px;
         overflow: scroll;
+        z-index: 3;
     }
 
     .animelist-list-instance {
