@@ -10,6 +10,10 @@
     #animelist {
         background-attachment: scroll;
     }
+
+    #events {
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-width: 900px) {
