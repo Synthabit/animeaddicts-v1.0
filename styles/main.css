@@ -310,9 +310,6 @@ section {
 
 .animelist-list {
     padding: 40px 0px 40px 0px;
-    /* width: 80%;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 .animelist-list h3 {
@@ -390,7 +387,7 @@ section {
 }
 
 .overlay-container {
-    max-width: 40%;
+    max-width: var(--content-container-width);
     margin: 0px auto 0px auto;
 }
 
@@ -407,6 +404,7 @@ section {
 
 .overlay-header img {
     width: 100%;
+    margin-top: 160px;
 }
 
 .overlay-header h2 {
