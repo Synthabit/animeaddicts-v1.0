@@ -66,10 +66,18 @@
 
     /* Anime List */
 
+    .animelist-list {
+        width: 60%;
+    }
+
     .animelist-list-grid {
         display: block;
         max-height: 620px;
         overflow: scroll;
+    }
+
+    .animelist-list-instance {
+        width: 100%;
     }
 }
 

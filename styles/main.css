@@ -297,6 +297,8 @@ section {
 
 .animelist-list {
     padding: 40px 0px 40px 0px;
+    width: 80%;
+    margin: auto;
 }
 
 .animelist-list h3 {
@@ -309,10 +311,11 @@ section {
 .animelist-list-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    /* width: 60%; */
 }
 
 .animelist-list-instance {
-    width: 60%;
+    width: 80%;
     margin: 0px auto 0px auto;
     padding: 20px 0px 20px 0px;
 }
